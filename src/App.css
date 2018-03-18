@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.game-map {
+  display: block;
+  background-color: black;
+  height: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 60px; height: 60px;
+  display: inline-block;
+  background: url("./img/green.png");
+}
+
+.row {
+  height: 60px;
+}
+
+.header {
+  width: 100%;
+  background-color: black;
+  height: 150px;
+}
+
+table {
+  margin: 0 auto;
+}
+
+td {
+  text-align: right;
+}
+
+.right-col {
+  padding-left: 50px;
+}
+
+.gray-bar {
+  width: 150px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: outset #72ea60;
+  background: green;
+  padding: 5px 10px;
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-size: 1.1em;
+  color: white;
+  cursor: pointer;
+}
+
+button:active {
+  border: inset #72ea60;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#player, .weapon {
+  -webkit-filter: saturate(10); filter: saturate(10);
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+#instructions h3 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  width: 75%;
+  margin: 0 auto;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+#instructions p {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#instructions {
+  width: 80%;
+  height: 300px;
+  z-index: 100;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  margin-left: 10%;
+  overflow-y: auto;
+  color: #003900;
+}
+
+@media screen and (max-width: 500px) {
+  table {
+    font-size: 12px;
+  }
+
+  .right-col {
+    padding-left: 10px;
+  }
+
+  .gray-bar {
+    width: 70px;
+  }
+}
